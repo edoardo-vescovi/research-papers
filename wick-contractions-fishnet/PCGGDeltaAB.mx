@@ -1,0 +1,302 @@
+PCGGDeltaAB[2] = ((B*(-3 + N) + N*(-(A*(-2 + N)) + (-1 + N)*N))*
+      contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+        Subscript[\[Phi]1[x1], i[2], i[1]]}])/((-1 + N)*N^2)
+ 
+PCGGDeltaAB[4] = (2*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], 
+          i[2]], Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], 
+          i[4], i[5]], Subscript[\[Phi]2[x2], i[5], i[4]]}])/
+      (N^2*(6 - 5*N + N^2)) + ((8*B*(-4 + N) - 4*A*(-3 + N)*N)*
+       contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[1]]}])/
+      ((-3 + N)*(-2 + N)*N^2) + (2*((-3 + N)*N*(-(A*(-4 + N)) + (-2 + N)*N) + 
+        B*(20 - 9*N + N^2))*contractionFreeHold[
+        {Subscript[\[Phi]2[x2], i[1], i[2]], Subscript[\[Phi]1[x1], i[2], 
+          i[1]], Subscript[\[Phi]2[x2], i[4], i[5]], Subscript[\[Phi]1[x1], 
+          i[5], i[4]]}])/((-3 + N)*(-2 + N)*N^2) - 
+     (2*((-3 + N)*N*(-(A*(-4 + N)) + (-2 + N)*N) + B*(20 - 9*N + N^2))*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[1]]}])/((-3 + N)*(-2 + N)*N^2)
+ 
+PCGGDeltaAB[6] = (18*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], 
+          i[2]], Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], 
+          i[4], i[5]], Subscript[\[Phi]1[x1], i[5], i[4]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]2[x2], i[8], 
+          i[7]]}])/((-4 + N)*(-3 + N)*N^2) - 
+     (36*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[4]]}])/
+      ((-4 + N)*(-3 + N)*N^2) + 
+     (72*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]2[x2], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[1]]}])/
+      ((-4 + N)*(-3 + N)*N^2) + ((72*B*(-6 + N) - 36*A*(-4 + N)*N)*
+       contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]1[x1], i[3], 
+          i[1]], Subscript[\[Phi]2[x2], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[5]]}])/
+      ((-4 + N)*(-3 + N)*N^2) + (36*(-2*B*(-6 + N) + A*(-4 + N)*N)*
+       contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]1[x1], i[3], 
+          i[4]], Subscript[\[Phi]2[x2], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[1]]}])/
+      ((-4 + N)*(-3 + N)*N^2) + (36*(-2*B*(-6 + N) + A*(-4 + N)*N)*
+       contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[1]]}])/
+      ((-4 + N)*(-3 + N)*N^2) + ((72*B*(-6 + N) - 36*A*(-4 + N)*N)*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]1[x1], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[4]]}])/
+      ((-4 + N)*(-3 + N)*N^2) + (6*((-4 + N)*N*(-(A*(-6 + N)) + (-3 + N)*N) + 
+        B*(42 - 13*N + N^2))*contractionFreeHold[
+        {Subscript[\[Phi]2[x2], i[1], i[2]], Subscript[\[Phi]1[x1], i[2], 
+          i[1]], Subscript[\[Phi]2[x2], i[4], i[5]], Subscript[\[Phi]1[x1], 
+          i[5], i[4]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]1[x1], i[8], i[7]]}])/((-4 + N)*(-3 + N)*N^2) - 
+     (18*((-4 + N)*N*(-(A*(-6 + N)) + (-3 + N)*N) + B*(42 - 13*N + N^2))*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[4]]}])/
+      ((-4 + N)*(-3 + N)*N^2) + 
+     (12*((-4 + N)*N*(-(A*(-6 + N)) + (-3 + N)*N) + B*(42 - 13*N + N^2))*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[1]]}])/
+      ((-4 + N)*(-3 + N)*N^2) - 
+     (36*B*contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[1]], Subscript[\[Phi]1[x1], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[4]]}])/
+      ((-4 + N)*(-3 + N)*N^2)
+ 
+PCGGDeltaAB[8] = (144*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], 
+          i[2]], Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], 
+          i[4], i[5]], Subscript[\[Phi]1[x1], i[5], i[4]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]1[x1], i[8], 
+          i[7]], Subscript[\[Phi]2[x2], i[10], i[11]], Subscript[\[Phi]2[x2], 
+          i[11], i[10]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (576*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[4]], Subscript[\[Phi]2[x2], 
+          i[7], i[8]], Subscript[\[Phi]2[x2], i[8], i[9]], 
+         Subscript[\[Phi]2[x2], i[9], i[10]], Subscript[\[Phi]1[x1], i[10], 
+          i[7]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[4]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (144*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[4]], Subscript[\[Phi]2[x2], 
+          i[7], i[8]], Subscript[\[Phi]1[x1], i[8], i[9]], 
+         Subscript[\[Phi]2[x2], i[9], i[10]], Subscript[\[Phi]1[x1], i[10], 
+          i[7]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (288*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[6]], Subscript[\[Phi]1[x1], 
+          i[6], i[4]], Subscript[\[Phi]2[x2], i[8], i[9]], 
+         Subscript[\[Phi]2[x2], i[9], i[10]], Subscript[\[Phi]1[x1], i[10], 
+          i[8]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (288*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[6]], Subscript[\[Phi]1[x1], 
+          i[6], i[7]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[4]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (1152*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[1]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[6]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (1152*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]2[x2], i[6], i[7]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]1[x1], i[8], 
+          i[1]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (1152*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]2[x2], i[4], i[5]], Subscript[\[Phi]1[x1], 
+          i[5], i[6]], Subscript[\[Phi]2[x2], i[6], i[7]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]1[x1], i[8], 
+          i[1]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (1152*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]2[x2], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[7]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]1[x1], i[8], 
+          i[1]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (1152*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]1[x1], i[3], 
+          i[1]], Subscript[\[Phi]1[x1], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[5]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*(-2*B*(-8 + N) + A*(-5 + N)*N)*contractionFreeHold[
+        {Subscript[\[Phi]1[x1], i[1], i[2]], Subscript[\[Phi]2[x2], i[2], 
+          i[3]], Subscript[\[Phi]1[x1], i[3], i[1]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[7]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]2[x2], i[8], 
+          i[9]], Subscript[\[Phi]1[x1], i[9], i[5]]}])/
+      ((-5 + N)*(-4 + N)*N^2) - 
+     (1152*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]1[x1], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]2[x2], i[6], i[7]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]1[x1], i[8], 
+          i[1]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*(2*B*(-8 + N) - A*(-5 + N)*N)*contractionFreeHold[
+        {Subscript[\[Phi]1[x1], i[1], i[2]], Subscript[\[Phi]2[x2], i[2], 
+          i[3]], Subscript[\[Phi]1[x1], i[3], i[4]], Subscript[\[Phi]2[x2], 
+          i[4], i[5]], Subscript[\[Phi]1[x1], i[5], i[6]], 
+         Subscript[\[Phi]2[x2], i[6], i[7]], Subscript[\[Phi]2[x2], i[7], 
+          i[8]], Subscript[\[Phi]1[x1], i[8], i[1]]}])/
+      ((-5 + N)*(-4 + N)*N^2) + (576*(2*B*(-8 + N) - A*(-5 + N)*N)*
+       contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]1[x1], i[3], 
+          i[4]], Subscript[\[Phi]2[x2], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[7]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]1[x1], i[8], 
+          i[1]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[1]], Subscript[\[Phi]1[x1], 
+          i[6], i[7]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[6]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (288*(-2*B*(-8 + N) + A*(-5 + N)*N)*contractionFreeHold[
+        {Subscript[\[Phi]1[x1], i[1], i[2]], Subscript[\[Phi]2[x2], i[2], 
+          i[3]], Subscript[\[Phi]2[x2], i[3], i[4]], Subscript[\[Phi]1[x1], 
+          i[4], i[1]], Subscript[\[Phi]2[x2], i[6], i[7]], 
+         Subscript[\[Phi]1[x1], i[7], i[8]], Subscript[\[Phi]2[x2], i[8], 
+          i[9]], Subscript[\[Phi]1[x1], i[9], i[6]]}])/
+      ((-5 + N)*(-4 + N)*N^2) - 
+     (576*B*contractionFreeHold[{Subscript[\[Phi]1[x1], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[5]], Subscript[\[Phi]1[x1], 
+          i[5], i[6]], Subscript[\[Phi]2[x2], i[6], i[7]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]1[x1], i[8], 
+          i[1]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*(2*B*(-8 + N) - A*(-5 + N)*N)*contractionFreeHold[
+        {Subscript[\[Phi]1[x1], i[1], i[2]], Subscript[\[Phi]2[x2], i[2], 
+          i[3]], Subscript[\[Phi]2[x2], i[3], i[4]], Subscript[\[Phi]1[x1], 
+          i[4], i[5]], Subscript[\[Phi]2[x2], i[5], i[6]], 
+         Subscript[\[Phi]1[x1], i[6], i[7]], Subscript[\[Phi]2[x2], i[7], 
+          i[8]], Subscript[\[Phi]1[x1], i[8], i[1]]}])/
+      ((-5 + N)*(-4 + N)*N^2) + 
+     (1152*B*contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]1[x1], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[4]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*(2*B*(-8 + N) - A*(-5 + N)*N)*contractionFreeHold[
+        {Subscript[\[Phi]2[x2], i[1], i[2]], Subscript[\[Phi]1[x1], i[2], 
+          i[1]], Subscript[\[Phi]1[x1], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[4]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]2[x2], i[9], 
+          i[10]], Subscript[\[Phi]1[x1], i[10], i[8]]}])/
+      ((-5 + N)*(-4 + N)*N^2) + (576*(-2*B*(-8 + N) + A*(-5 + N)*N)*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]1[x1], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[6]], Subscript[\[Phi]1[x1], 
+          i[6], i[7]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[4]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*(-2*B*(-8 + N) + A*(-5 + N)*N)*contractionFreeHold[
+        {Subscript[\[Phi]2[x2], i[1], i[2]], Subscript[\[Phi]1[x1], i[2], 
+          i[1]], Subscript[\[Phi]1[x1], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]2[x2], i[6], i[7]], 
+         Subscript[\[Phi]1[x1], i[7], i[8]], Subscript[\[Phi]2[x2], i[8], 
+          i[9]], Subscript[\[Phi]1[x1], i[9], i[4]]}])/
+      ((-5 + N)*(-4 + N)*N^2) + (288*(2*B*(-8 + N) - A*(-5 + N)*N)*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[4]], Subscript[\[Phi]1[x1], 
+          i[7], i[8]], Subscript[\[Phi]2[x2], i[8], i[9]], 
+         Subscript[\[Phi]2[x2], i[9], i[10]], Subscript[\[Phi]1[x1], i[10], 
+          i[7]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (24*((-5 + N)*N*(-(A*(-8 + N)) + (-4 + N)*N) + B*(72 - 17*N + N^2))*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[4]], Subscript[\[Phi]2[x2], 
+          i[7], i[8]], Subscript[\[Phi]1[x1], i[8], i[7]], 
+         Subscript[\[Phi]2[x2], i[10], i[11]], Subscript[\[Phi]1[x1], i[11], 
+          i[10]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (144*((-5 + N)*N*(-(A*(-8 + N)) + (-4 + N)*N) + B*(72 - 17*N + N^2))*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[4]], Subscript[\[Phi]2[x2], 
+          i[7], i[8]], Subscript[\[Phi]1[x1], i[8], i[9]], 
+         Subscript[\[Phi]2[x2], i[9], i[10]], Subscript[\[Phi]1[x1], i[10], 
+          i[7]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (192*((-5 + N)*N*(-(A*(-8 + N)) + (-4 + N)*N) + B*(72 - 17*N + N^2))*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[4]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (576*B*contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[1]], Subscript[\[Phi]2[x2], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[4]], Subscript[\[Phi]1[x1], 
+          i[7], i[8]], Subscript[\[Phi]1[x1], i[8], i[9]], 
+         Subscript[\[Phi]2[x2], i[9], i[10]], Subscript[\[Phi]1[x1], i[10], 
+          i[7]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (72*((-5 + N)*N*(-(A*(-8 + N)) + (-4 + N)*N) + B*(72 - 17*N + N^2))*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[1]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[6]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (144*((-5 + N)*N*(-(A*(-8 + N)) + (-4 + N)*N) + B*(72 - 17*N + N^2))*
+       contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]1[x1], i[2], i[3]], Subscript[\[Phi]2[x2], i[3], 
+          i[4]], Subscript[\[Phi]1[x1], i[4], i[5]], Subscript[\[Phi]2[x2], 
+          i[5], i[6]], Subscript[\[Phi]1[x1], i[6], i[7]], 
+         Subscript[\[Phi]2[x2], i[7], i[8]], Subscript[\[Phi]1[x1], i[8], 
+          i[1]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*B*contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[1]], Subscript[\[Phi]1[x1], i[4], 
+          i[5]], Subscript[\[Phi]1[x1], i[5], i[6]], Subscript[\[Phi]2[x2], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[4]]}])/((-5 + N)*(-4 + N)*N^2) - 
+     (288*B*contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[1]], Subscript[\[Phi]1[x1], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[6]], Subscript[\[Phi]1[x1], 
+          i[6], i[4]], Subscript[\[Phi]1[x1], i[8], i[9]], 
+         Subscript[\[Phi]2[x2], i[9], i[10]], Subscript[\[Phi]1[x1], i[10], 
+          i[8]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (288*B*contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[1]], Subscript[\[Phi]1[x1], i[4], 
+          i[5]], Subscript[\[Phi]2[x2], i[5], i[6]], Subscript[\[Phi]1[x1], 
+          i[6], i[7]], Subscript[\[Phi]1[x1], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[4]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (1152*B*contractionFreeHold[{Subscript[\[Phi]2[x2], i[1], i[2]], 
+         Subscript[\[Phi]2[x2], i[2], i[3]], Subscript[\[Phi]1[x1], i[3], 
+          i[1]], Subscript[\[Phi]1[x1], i[5], i[6]], Subscript[\[Phi]1[x1], 
+          i[6], i[7]], Subscript[\[Phi]2[x2], i[7], i[8]], 
+         Subscript[\[Phi]2[x2], i[8], i[9]], Subscript[\[Phi]1[x1], i[9], 
+          i[5]]}])/((-5 + N)*(-4 + N)*N^2) + 
+     (576*(-2*B*(-8 + N) + A*(-5 + N)*N)*contractionFreeHold[
+        {Subscript[\[Phi]2[x2], i[1], i[2]], Subscript[\[Phi]2[x2], i[2], 
+          i[3]], Subscript[\[Phi]1[x1], i[3], i[1]], Subscript[\[Phi]1[x1], 
+          i[5], i[6]], Subscript[\[Phi]2[x2], i[6], i[7]], 
+         Subscript[\[Phi]1[x1], i[7], i[8]], Subscript[\[Phi]2[x2], i[8], 
+          i[9]], Subscript[\[Phi]1[x1], i[9], i[5]]}])/((-5 + N)*(-4 + N)*N^2)
+ 
+Attributes[Subscript] = {NHoldRest}

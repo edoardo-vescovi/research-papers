@@ -1,0 +1,4493 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    188279,       4485]
+NotebookOptionsPosition[    187861,       4469]
+NotebookOutlinePosition[    188321,       4487]
+CellTagsIndexPosition[    188278,       4484]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bExplicit", "1"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "30"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubscriptBox["a", "1"]}], "+", 
+    RowBox[{
+     FractionBox["1", "30"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubscriptBox["a", "1"]}], "+", 
+    RowBox[{
+     FractionBox["1", "3"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "2"]}], "+", 
+    RowBox[{
+     FractionBox["1", "3"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "2"]}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bbExplicit", "1"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "30"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubscriptBox["a", "1"]}], "+", 
+    RowBox[{
+     FractionBox["1", "30"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubscriptBox["a", "1"]}], "+", 
+    RowBox[{
+     FractionBox["1", "3"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "2"]}], "+", 
+    RowBox[{
+     FractionBox["1", "3"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "2"]}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bExplicit", "2"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"11", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+       SubsuperscriptBox["a", "1", "2"]}], "12600"]}], "+", 
+    RowBox[{
+     FractionBox["1", "504"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"]}], "-", 
+    RowBox[{
+     FractionBox["1", "126"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubscriptBox["a", "2"]}], "-", 
+    RowBox[{
+     FractionBox["1", "90"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubscriptBox["a", "2"]}], "+", 
+    RowBox[{
+     FractionBox["1", "30"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubscriptBox["a", "2"]}], "+", 
+    RowBox[{
+     FractionBox["19", "630"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubscriptBox["a", "2"]}], "-", 
+    RowBox[{
+     FractionBox["1", "45"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "+", 
+    RowBox[{
+     FractionBox["2", "15"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "2"]}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bbExplicit", "2"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "504"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"]}], "-", 
+    FractionBox[
+     RowBox[{"11", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"]}], "12600"], "+", 
+    RowBox[{
+     FractionBox["19", "630"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubscriptBox["a", "2"]}], "+", 
+    RowBox[{
+     FractionBox["1", "30"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubscriptBox["a", "2"]}], "-", 
+    RowBox[{
+     FractionBox["1", "90"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubscriptBox["a", "2"]}], "-", 
+    RowBox[{
+     FractionBox["1", "126"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubscriptBox["a", "2"]}], "+", 
+    RowBox[{
+     FractionBox["2", "15"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "-", 
+    RowBox[{
+     FractionBox["1", "45"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "2"]}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bExplicit", "3"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"17", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"]}], "54000"], "+", 
+    FractionBox[
+     RowBox[{"31", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"]}], "75600"], "+", 
+    FractionBox[
+     RowBox[{"211", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"]}], "7722000"], "+", 
+    FractionBox[
+     RowBox[{"53", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"]}], "432432"], "+", 
+    FractionBox[
+     RowBox[{"23", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "9450"], "+", 
+    FractionBox[
+     RowBox[{"397", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "1247400"], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "12600"], "+", 
+    FractionBox[
+     RowBox[{"7", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "1350"], "+", 
+    FractionBox[
+     RowBox[{"17", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "37800"], "+", 
+    FractionBox[
+     RowBox[{"3169", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "1247400"], "+", 
+    FractionBox[
+     RowBox[{"38", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "4725"], "+", 
+    RowBox[{
+     FractionBox["4", "675"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "+", 
+    FractionBox[
+     RowBox[{"19", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "14175"], "+", 
+    FractionBox[
+     RowBox[{"109", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "5670"], "+", 
+    RowBox[{
+     FractionBox["8", "135"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "+", 
+    RowBox[{
+     FractionBox["1", "9"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "+", 
+    RowBox[{
+     FractionBox["2", "945"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "+", 
+    RowBox[{
+     FractionBox["17", "315"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "3"]}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bbExplicit", "3"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"31", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"]}], "75600"], "+", 
+    FractionBox[
+     RowBox[{"17", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"]}], "54000"], "+", 
+    FractionBox[
+     RowBox[{"53", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"]}], "432432"], "+", 
+    FractionBox[
+     RowBox[{"211", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"]}], "7722000"], "+", 
+    FractionBox[
+     RowBox[{"7", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "1350"], "+", 
+    FractionBox[
+     RowBox[{"3169", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "1247400"], "+", 
+    FractionBox[
+     RowBox[{"17", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "37800"], "+", 
+    FractionBox[
+     RowBox[{"23", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "9450"], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "12600"], "+", 
+    FractionBox[
+     RowBox[{"397", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubscriptBox["a", "2"]}], "1247400"], "+", 
+    RowBox[{
+     FractionBox["4", "675"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "+", 
+    FractionBox[
+     RowBox[{"38", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "4725"], "+", 
+    FractionBox[
+     RowBox[{"109", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "5670"], "+", 
+    FractionBox[
+     RowBox[{"19", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "14175"], "+", 
+    RowBox[{
+     FractionBox["1", "9"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "+", 
+    RowBox[{
+     FractionBox["8", "135"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "+", 
+    RowBox[{
+     FractionBox["17", "315"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "+", 
+    RowBox[{
+     FractionBox["2", "945"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "3"]}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bExplicit", "4"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"953", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+       SubsuperscriptBox["a", "1", "4"]}], "73710000"]}], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"]}], "23760"], "-", 
+    FractionBox[
+     RowBox[{"419", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"]}], "477360000"], "+", 
+    FractionBox[
+     RowBox[{"3613", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"]}], "475009920"], "-", 
+    FractionBox[
+     RowBox[{"169", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1386000"], "-", 
+    FractionBox[
+     RowBox[{"323", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1587600"], "-", 
+    FractionBox[
+     RowBox[{"14353", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1135134000"], "+", 
+    FractionBox[
+     RowBox[{"41", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1782000"], "+", 
+    FractionBox[
+     RowBox[{"731", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1134000"], "+", 
+    FractionBox[
+     RowBox[{"2599", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "3402000"], "-", 
+    FractionBox[
+     RowBox[{"79", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "2162160"], "+", 
+    FractionBox[
+     RowBox[{"680993", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "3405402000"], "-", 
+    FractionBox[
+     RowBox[{"134", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "259875"], "+", 
+    FractionBox[
+     RowBox[{"41", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "42525"], "-", 
+    FractionBox[
+     RowBox[{"14", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "30375"], "-", 
+    FractionBox[
+     RowBox[{"11131", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "154791000"], "-", 
+    FractionBox[
+     RowBox[{"13", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "81000"], "+", 
+    RowBox[{
+     FractionBox["3", "700"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "2700"], "+", 
+    FractionBox[
+     RowBox[{"12832", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "6081075"], "-", 
+    FractionBox[
+     RowBox[{"233", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "85050"], "-", 
+    FractionBox[
+     RowBox[{"43", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "9450"], "+", 
+    FractionBox[
+     RowBox[{"101", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "9450"], "+", 
+    RowBox[{
+     FractionBox["8", "525"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "-", 
+    FractionBox[
+     RowBox[{"181", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "935550"], "-", 
+    FractionBox[
+     RowBox[{"31", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "28350"], "+", 
+    FractionBox[
+     RowBox[{"7", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "1350"], "+", 
+    FractionBox[
+     RowBox[{"332", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "31185"], "-", 
+    FractionBox[
+     RowBox[{"17", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "2835"], "+", 
+    RowBox[{
+     FractionBox["11", "135"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "4725"], "+", 
+    FractionBox[
+     RowBox[{"62", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "2835"]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bbExplicit", "4"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"]}], "23760"], "-", 
+    FractionBox[
+     RowBox[{"953", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"]}], "73710000"], "+", 
+    FractionBox[
+     RowBox[{"3613", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"]}], "475009920"], "-", 
+    FractionBox[
+     RowBox[{"419", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"]}], "477360000"], "+", 
+    FractionBox[
+     RowBox[{"2599", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "3402000"], "+", 
+    FractionBox[
+     RowBox[{"731", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1134000"], "+", 
+    FractionBox[
+     RowBox[{"680993", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "3405402000"], "-", 
+    FractionBox[
+     RowBox[{"79", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "2162160"], "-", 
+    FractionBox[
+     RowBox[{"323", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1587600"], "-", 
+    FractionBox[
+     RowBox[{"169", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1386000"], "+", 
+    FractionBox[
+     RowBox[{"41", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1782000"], "-", 
+    FractionBox[
+     RowBox[{"14353", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubscriptBox["a", "2"]}], "1135134000"], "+", 
+    FractionBox[
+     RowBox[{"41", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "42525"], "-", 
+    FractionBox[
+     RowBox[{"134", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "259875"], "+", 
+    RowBox[{
+     FractionBox["3", "700"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "+", 
+    FractionBox[
+     RowBox[{"12832", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "6081075"], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "2700"], "-", 
+    FractionBox[
+     RowBox[{"14", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "30375"], "-", 
+    FractionBox[
+     RowBox[{"13", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "81000"], "-", 
+    FractionBox[
+     RowBox[{"11131", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "154791000"], "+", 
+    RowBox[{
+     FractionBox["8", "525"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "+", 
+    FractionBox[
+     RowBox[{"101", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "9450"], "-", 
+    FractionBox[
+     RowBox[{"43", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "9450"], "-", 
+    FractionBox[
+     RowBox[{"233", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "85050"], "+", 
+    FractionBox[
+     RowBox[{"332", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "31185"], "+", 
+    FractionBox[
+     RowBox[{"7", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "1350"], "-", 
+    FractionBox[
+     RowBox[{"31", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "28350"], "-", 
+    FractionBox[
+     RowBox[{"181", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "935550"], "+", 
+    RowBox[{
+     FractionBox["11", "135"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "-", 
+    FractionBox[
+     RowBox[{"17", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "2835"], "+", 
+    FractionBox[
+     RowBox[{"62", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "2835"], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "4725"]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bExplicit", "5"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"12287", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "2211300000"], "+", 
+    FractionBox[
+     RowBox[{"439", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "53460000"], "+", 
+    FractionBox[
+     RowBox[{"83483", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "157528800000"], "+", 
+    FractionBox[
+     RowBox[{"13183", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "3632428800"], "+", 
+    FractionBox[
+     RowBox[{"1999", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "20"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "70543200000"], "+", 
+    FractionBox[
+     RowBox[{"7523", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"20", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "15926803200"], "+", 
+    FractionBox[
+     RowBox[{"11719", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "261954000"], "+", 
+    FractionBox[
+     RowBox[{"4283", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "654885000"], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "93555000"], "+", 
+    FractionBox[
+     RowBox[{"12866417", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "18"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "26398676304000"], "+", 
+    FractionBox[
+     RowBox[{"38471", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "12383280000"], "+", 
+    FractionBox[
+     RowBox[{"45497", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "357210000"], "+", 
+    FractionBox[
+     RowBox[{"5443", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "327442500"], "+", 
+    FractionBox[
+     RowBox[{"8773", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "102162060"], "+", 
+    FractionBox[
+     RowBox[{"1435607", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "771891120000"], "+", 
+    FractionBox[
+     RowBox[{"79453637", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"18", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "5279735260800"], "+", 
+    FractionBox[
+     RowBox[{"2587", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "7796250"], "+", 
+    FractionBox[
+     RowBox[{"28873", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "89302500"], "+", 
+    FractionBox[
+     RowBox[{"123719", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "4256752500"], "+", 
+    FractionBox[
+     RowBox[{"24467", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "212837625"], "+", 
+    FractionBox[
+     RowBox[{"76099", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "2321865000"], "+", 
+    FractionBox[
+     RowBox[{"189149", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "54273594375"], "-", 
+    FractionBox[
+     RowBox[{"1247", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "130977000"], "+", 
+    FractionBox[
+     RowBox[{"2381", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "3118500"], "+", 
+    FractionBox[
+     RowBox[{"6493", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "851350500"], "+", 
+    FractionBox[
+     RowBox[{"35197703", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "173675502000"], "+", 
+    FractionBox[
+     RowBox[{"2731", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "1275750"], "+", 
+    FractionBox[
+     RowBox[{"31151", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "170270100"], "-", 
+    FractionBox[
+     RowBox[{"871", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "5953500"], "+", 
+    FractionBox[
+     RowBox[{"3679", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "661500"], "+", 
+    FractionBox[
+     RowBox[{"10631", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "26195400"], "+", 
+    FractionBox[
+     RowBox[{"21437", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "11226600"], "+", 
+    FractionBox[
+     RowBox[{"43", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "519750"], "+", 
+    FractionBox[
+     RowBox[{"8311", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "638512875"], "+", 
+    FractionBox[
+     RowBox[{"79", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "1488375"], "+", 
+    FractionBox[
+     RowBox[{"499", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "170100"], "+", 
+    FractionBox[
+     RowBox[{"187", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "567000"], "+", 
+    FractionBox[
+     RowBox[{"1054379", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "729729000"], "+", 
+    FractionBox[
+     RowBox[{"2831", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "637875"], "+", 
+    FractionBox[
+     RowBox[{"943", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "425250"], "+", 
+    FractionBox[
+     RowBox[{"7859", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "14033250"], "+", 
+    FractionBox[
+     RowBox[{"143", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "9450"], "+", 
+    FractionBox[
+     RowBox[{"5443", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "212837625"], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "10125"], "+", 
+    FractionBox[
+     RowBox[{"17", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "4725"], "+", 
+    FractionBox[
+     RowBox[{"33281", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "6081075"], "+", 
+    FractionBox[
+     RowBox[{"214", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "8505"], "+", 
+    FractionBox[
+     RowBox[{"128", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "2025"], "+", 
+    FractionBox[
+     RowBox[{"31", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "42525"], "+", 
+    RowBox[{
+     FractionBox["1", "21"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "+", 
+    FractionBox[
+     RowBox[{"2", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "93555"], "+", 
+    FractionBox[
+     RowBox[{"1382", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "155925"]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bbExplicit", "5"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"439", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "53460000"], "+", 
+    FractionBox[
+     RowBox[{"12287", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "2211300000"], "+", 
+    FractionBox[
+     RowBox[{"13183", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "3632428800"], "+", 
+    FractionBox[
+     RowBox[{"83483", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "157528800000"], "+", 
+    FractionBox[
+     RowBox[{"7523", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "20"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "15926803200"], "+", 
+    FractionBox[
+     RowBox[{"1999", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"20", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"]}], "70543200000"], "+", 
+    FractionBox[
+     RowBox[{"45497", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "357210000"], "+", 
+    FractionBox[
+     RowBox[{"8773", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "102162060"], "+", 
+    FractionBox[
+     RowBox[{"5443", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "327442500"], "+", 
+    FractionBox[
+     RowBox[{"79453637", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "18"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "5279735260800"], "+", 
+    FractionBox[
+     RowBox[{"1435607", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "771891120000"], "+", 
+    FractionBox[
+     RowBox[{"11719", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "261954000"], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "93555000"], "+", 
+    FractionBox[
+     RowBox[{"4283", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "654885000"], "+", 
+    FractionBox[
+     RowBox[{"38471", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "12383280000"], "+", 
+    FractionBox[
+     RowBox[{"12866417", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"18", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubscriptBox["a", "2"]}], "26398676304000"], "+", 
+    FractionBox[
+     RowBox[{"28873", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "89302500"], "+", 
+    FractionBox[
+     RowBox[{"2587", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "7796250"], "+", 
+    FractionBox[
+     RowBox[{"24467", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "212837625"], "+", 
+    FractionBox[
+     RowBox[{"123719", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "4256752500"], "+", 
+    FractionBox[
+     RowBox[{"2381", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "3118500"], "+", 
+    FractionBox[
+     RowBox[{"35197703", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "173675502000"], "+", 
+    FractionBox[
+     RowBox[{"6493", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "851350500"], "+", 
+    FractionBox[
+     RowBox[{"76099", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "2321865000"], "-", 
+    FractionBox[
+     RowBox[{"1247", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "130977000"], "+", 
+    FractionBox[
+     RowBox[{"189149", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "54273594375"], "+", 
+    FractionBox[
+     RowBox[{"3679", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "661500"], "+", 
+    FractionBox[
+     RowBox[{"21437", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "11226600"], "+", 
+    FractionBox[
+     RowBox[{"10631", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "26195400"], "+", 
+    FractionBox[
+     RowBox[{"2731", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "1275750"], "-", 
+    FractionBox[
+     RowBox[{"871", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "5953500"], "+", 
+    FractionBox[
+     RowBox[{"31151", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "170270100"], "+", 
+    FractionBox[
+     RowBox[{"499", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "170100"], "+", 
+    FractionBox[
+     RowBox[{"1054379", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "729729000"], "+", 
+    FractionBox[
+     RowBox[{"187", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "567000"], "+", 
+    FractionBox[
+     RowBox[{"43", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "519750"], "+", 
+    FractionBox[
+     RowBox[{"79", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "1488375"], "+", 
+    FractionBox[
+     RowBox[{"8311", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "638512875"], "+", 
+    FractionBox[
+     RowBox[{"943", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "425250"], "+", 
+    FractionBox[
+     RowBox[{"2831", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "637875"], "+", 
+    FractionBox[
+     RowBox[{"143", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "9450"], "+", 
+    FractionBox[
+     RowBox[{"7859", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "14033250"], "+", 
+    FractionBox[
+     RowBox[{"33281", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "6081075"], "+", 
+    FractionBox[
+     RowBox[{"17", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "4725"], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "10125"], "+", 
+    FractionBox[
+     RowBox[{"5443", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "212837625"], "+", 
+    FractionBox[
+     RowBox[{"128", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "2025"], "+", 
+    FractionBox[
+     RowBox[{"214", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "8505"], "+", 
+    RowBox[{
+     FractionBox["1", "21"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "+", 
+    FractionBox[
+     RowBox[{"31", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "42525"], "+", 
+    FractionBox[
+     RowBox[{"1382", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "155925"], "+", 
+    FractionBox[
+     RowBox[{"2", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "93555"]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SubscriptBox["bExplicit", "6"], "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"6412681", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+       SubsuperscriptBox["a", "1", "6"]}], "25261891200000"]}], "+", 
+    FractionBox[
+     RowBox[{"360347", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "6"]}], "352066176000"], "-", 
+    FractionBox[
+     RowBox[{"5231", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "6"]}], "250614000000"], "+", 
+    FractionBox[
+     RowBox[{"585619", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "6"]}], "2030667408000"], "-", 
+    FractionBox[
+     RowBox[{"4940977", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "24"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "6"]}], "5395218192000000"], "+", 
+    FractionBox[
+     RowBox[{"248239841", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"24", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "6"]}], "8461910540160000"], "-", 
+    FractionBox[
+     RowBox[{"1822277", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "715134420000"], "-", 
+    FractionBox[
+     RowBox[{"3006391", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "624323700000"], "-", 
+    FractionBox[
+     RowBox[{"962981", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "3025058400000"], "+", 
+    FractionBox[
+     RowBox[{"94111513", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "85816130400000"], "-", 
+    FractionBox[
+     RowBox[{"128458026617", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "22"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "7012808360157600000"], "+", 
+    FractionBox[
+     RowBox[{"15663941", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"18", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "52797352608000"], "+", 
+    FractionBox[
+     RowBox[{"148097", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "9287460000"], "+", 
+    FractionBox[
+     RowBox[{"227272589", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "10727016300000"], "-", 
+    FractionBox[
+     RowBox[{"21937253", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "16031584800000"], "+", 
+    FractionBox[
+     RowBox[{"12998543", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "1543782240000"], "-", 
+    FractionBox[
+     RowBox[{"108223327", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "18"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "1319933815200000"], "+", 
+    FractionBox[
+     RowBox[{"61601449523", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"22", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "5"], " ", 
+      SubscriptBox["a", "2"]}], "56102466881260800"], "-", 
+    FractionBox[
+     RowBox[{"5897917", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "268175407500"], "+", 
+    FractionBox[
+     RowBox[{"14653789", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "268175407500"], "-", 
+    FractionBox[
+     RowBox[{"45332173", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "30935948793750"], "+", 
+    FractionBox[
+     RowBox[{"15250691", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "1302566265000"], "-", 
+    FractionBox[
+     RowBox[{"6293501", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "536350815000"], "-", 
+    FractionBox[
+     RowBox[{"8870353", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "4341887550000"], "-", 
+    FractionBox[
+     RowBox[{"4905713", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "766215450000"], "-", 
+    FractionBox[
+     RowBox[{"960609941", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "20"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "6098094226224000"], "-", 
+    FractionBox[
+     RowBox[{"8941", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "45405360000"], "+", 
+    FractionBox[
+     RowBox[{"537169", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "3929310000"], "+", 
+    FractionBox[
+     RowBox[{"669941", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "51081030000"], "+", 
+    FractionBox[
+     RowBox[{"30769993", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "306486180000"], "-", 
+    FractionBox[
+     RowBox[{"90443", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "68108040000"], "+", 
+    FractionBox[
+     RowBox[{"5739464149", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"20", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "4"], " ", 
+      SubsuperscriptBox["a", "2", "2"]}], "319830116760000"], "-", 
+    FractionBox[
+     RowBox[{"3576641", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "27505170000"], "-", 
+    FractionBox[
+     RowBox[{"1649317", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "7072758000"], "-", 
+    FractionBox[
+     RowBox[{"9570149", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "868377510000"], "+", 
+    FractionBox[
+     RowBox[{"179549", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "21891870000"], "+", 
+    FractionBox[
+     RowBox[{"9893", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "17463600"], "+", 
+    FractionBox[
+     RowBox[{"3614551", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "3929310000"], "-", 
+    FractionBox[
+     RowBox[{"817541", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "21891870000"], "+", 
+    FractionBox[
+     RowBox[{"16460933", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "76621545000"], "-", 
+    FractionBox[
+     RowBox[{"82427", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "11787930000"], "-", 
+    FractionBox[
+     RowBox[{"144511", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "3929310000"], "-", 
+    FractionBox[
+     RowBox[{"6217243", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "18"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "8315583035760"], "-", 
+    FractionBox[
+     RowBox[{"5809", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "51081030000"], "+", 
+    FractionBox[
+     RowBox[{"31301", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "119070000"], "+", 
+    FractionBox[
+     RowBox[{"16103", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "26535600"], "+", 
+    FractionBox[
+     RowBox[{"225781", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "17027010000"], "+", 
+    FractionBox[
+     RowBox[{"347986399", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"18", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "3"], " ", 
+      SubsuperscriptBox["a", "2", "3"]}], "2121322203000"], "-", 
+    FractionBox[
+     RowBox[{"67432", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "195463125"], "+", 
+    FractionBox[
+     RowBox[{"25156", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "49116375"], "-", 
+    FractionBox[
+     RowBox[{"364163", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "982327500"], "-", 
+    FractionBox[
+     RowBox[{"306031", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "6965595000"], "-", 
+    FractionBox[
+     RowBox[{"542711", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "5893965000"], "+", 
+    FractionBox[
+     RowBox[{"96967", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "17860500"], "+", 
+    FractionBox[
+     RowBox[{"4091", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "15717240"], "+", 
+    FractionBox[
+     RowBox[{"6769", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "3159000"], "-", 
+    FractionBox[
+     RowBox[{"15163", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "1160932500"], "-", 
+    FractionBox[
+     RowBox[{"311603", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "150296107500"], "+", 
+    FractionBox[
+     RowBox[{"8527", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "4677750"], "+", 
+    FractionBox[
+     RowBox[{"25645073", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "1", "2"], " ", 
+      SubsuperscriptBox["a", "2", "4"]}], "28945917000"], "-", 
+    FractionBox[
+     RowBox[{"429661", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "294698250"], "-", 
+    FractionBox[
+     RowBox[{"1237", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "496125"], "+", 
+    FractionBox[
+     RowBox[{"961", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "212625"], "+", 
+    FractionBox[
+     RowBox[{"28519", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "2976750"], "-", 
+    FractionBox[
+     RowBox[{"359693", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "3831077250"], "-", 
+    FractionBox[
+     RowBox[{"401", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "637875"], "+", 
+    FractionBox[
+     RowBox[{"281", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "55125"], "+", 
+    FractionBox[
+     RowBox[{"15863", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "1403325"], "-", 
+    FractionBox[
+     RowBox[{"6131", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "1915538625"], "-", 
+    FractionBox[
+     RowBox[{"26", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "-", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "2338875"], "+", 
+    FractionBox[
+     RowBox[{"436", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "212625"], "+", 
+    FractionBox[
+     RowBox[{"490291", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "1"]}], "+", 
+        RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubscriptBox["a", "1"], " ", 
+      SubsuperscriptBox["a", "2", "5"]}], "182432250"], "-", 
+    FractionBox[
+     RowBox[{"1738", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "6"]}], "637875"], "+", 
+    FractionBox[
+     RowBox[{"494", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "6"]}], "8505"], "-", 
+    FractionBox[
+     RowBox[{"41", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "6"]}], "467775"], "+", 
+    FractionBox[
+     RowBox[{"1072", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "6"]}], "42525"], "-", 
+    FractionBox[
+     RowBox[{"1382", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "6"]}], "638512875"], "+", 
+    FractionBox[
+     RowBox[{"21844", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+        RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+         SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+      SubsuperscriptBox["a", "2", "6"]}], "6081075"]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["bbExplicit", "6"], "[", "\[Theta]_", "]"}], ":=", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"360347", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "6"]}], "352066176000"], "-", 
+   FractionBox[
+    RowBox[{"6412681", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "6"]}], "25261891200000"], "+", 
+   FractionBox[
+    RowBox[{"585619", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "6"]}], "2030667408000"], "-", 
+   FractionBox[
+    RowBox[{"5231", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "6"]}], "250614000000"], "+", 
+   FractionBox[
+    RowBox[{"248239841", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "24"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "6"]}], "8461910540160000"], "-", 
+   FractionBox[
+    RowBox[{"4940977", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"24", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "6"]}], "5395218192000000"], "+", 
+   FractionBox[
+    RowBox[{"227272589", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "10727016300000"], "+", 
+   FractionBox[
+    RowBox[{"148097", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "9287460000"], "+", 
+   FractionBox[
+    RowBox[{"12998543", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "1543782240000"], "-", 
+   FractionBox[
+    RowBox[{"21937253", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "16031584800000"], "+", 
+   FractionBox[
+    RowBox[{"61601449523", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "22"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "56102466881260800"], "-", 
+   FractionBox[
+    RowBox[{"108223327", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"18", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "1319933815200000"], "-", 
+   FractionBox[
+    RowBox[{"3006391", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "624323700000"], "-", 
+   FractionBox[
+    RowBox[{"1822277", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "715134420000"], "+", 
+   FractionBox[
+    RowBox[{"94111513", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "85816130400000"], "-", 
+   FractionBox[
+    RowBox[{"962981", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "3025058400000"], "+", 
+   FractionBox[
+    RowBox[{"15663941", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "18"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "52797352608000"], "-", 
+   FractionBox[
+    RowBox[{"128458026617", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"22", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "5"], " ", 
+     SubscriptBox["a", "2"]}], "7012808360157600000"], "+", 
+   FractionBox[
+    RowBox[{"14653789", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "268175407500"], "-", 
+   FractionBox[
+    RowBox[{"5897917", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "268175407500"], "+", 
+   FractionBox[
+    RowBox[{"15250691", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "1302566265000"], "-", 
+   FractionBox[
+    RowBox[{"45332173", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "30935948793750"], "+", 
+   FractionBox[
+    RowBox[{"537169", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "3929310000"], "+", 
+   FractionBox[
+    RowBox[{"30769993", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "306486180000"], "+", 
+   FractionBox[
+    RowBox[{"669941", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "51081030000"], "+", 
+   FractionBox[
+    RowBox[{"5739464149", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "20"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "319830116760000"], "-", 
+   FractionBox[
+    RowBox[{"90443", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "68108040000"], "-", 
+   FractionBox[
+    RowBox[{"6293501", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "536350815000"], "-", 
+   FractionBox[
+    RowBox[{"4905713", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "766215450000"], "-", 
+   FractionBox[
+    RowBox[{"8870353", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "4341887550000"], "-", 
+   FractionBox[
+    RowBox[{"8941", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "45405360000"], "-", 
+   FractionBox[
+    RowBox[{"960609941", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"20", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "4"], " ", 
+     SubsuperscriptBox["a", "2", "2"]}], "6098094226224000"], "+", 
+   FractionBox[
+    RowBox[{"3614551", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "3929310000"], "+", 
+   FractionBox[
+    RowBox[{"9893", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "17463600"], "+", 
+   FractionBox[
+    RowBox[{"16460933", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "76621545000"], "-", 
+   FractionBox[
+    RowBox[{"817541", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "21891870000"], "-", 
+   FractionBox[
+    RowBox[{"1649317", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "7072758000"], "-", 
+   FractionBox[
+    RowBox[{"3576641", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "27505170000"], "+", 
+   FractionBox[
+    RowBox[{"179549", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "21891870000"], "-", 
+   FractionBox[
+    RowBox[{"9570149", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "868377510000"], "+", 
+   FractionBox[
+    RowBox[{"16103", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "26535600"], "+", 
+   FractionBox[
+    RowBox[{"31301", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "119070000"], "+", 
+   FractionBox[
+    RowBox[{"347986399", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "18"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "2121322203000"], "+", 
+   FractionBox[
+    RowBox[{"225781", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "17027010000"], "-", 
+   FractionBox[
+    RowBox[{"144511", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "3929310000"], "-", 
+   FractionBox[
+    RowBox[{"82427", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "11787930000"], "-", 
+   FractionBox[
+    RowBox[{"5809", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "51081030000"], "-", 
+   FractionBox[
+    RowBox[{"6217243", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"18", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "3"], " ", 
+     SubsuperscriptBox["a", "2", "3"]}], "8315583035760"], "+", 
+   FractionBox[
+    RowBox[{"25156", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "49116375"], "-", 
+   FractionBox[
+    RowBox[{"67432", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "195463125"], "+", 
+   FractionBox[
+    RowBox[{"96967", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "17860500"], "+", 
+   FractionBox[
+    RowBox[{"6769", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "3159000"], "+", 
+   FractionBox[
+    RowBox[{"4091", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "15717240"], "-", 
+   FractionBox[
+    RowBox[{"364163", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "982327500"], "-", 
+   FractionBox[
+    RowBox[{"542711", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "5893965000"], "-", 
+   FractionBox[
+    RowBox[{"306031", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "6965595000"], "+", 
+   FractionBox[
+    RowBox[{"8527", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "4677750"], "+", 
+   FractionBox[
+    RowBox[{"25645073", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "16"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "28945917000"], "-", 
+   FractionBox[
+    RowBox[{"15163", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "1160932500"], "-", 
+   FractionBox[
+    RowBox[{"311603", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"16", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "1", "2"], " ", 
+     SubsuperscriptBox["a", "2", "4"]}], "150296107500"], "+", 
+   FractionBox[
+    RowBox[{"28519", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "2976750"], "+", 
+   FractionBox[
+    RowBox[{"961", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "212625"], "-", 
+   FractionBox[
+    RowBox[{"1237", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "496125"], "-", 
+   FractionBox[
+    RowBox[{"429661", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "294698250"], "+", 
+   FractionBox[
+    RowBox[{"15863", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "10"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "1403325"], "+", 
+   FractionBox[
+    RowBox[{"281", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "55125"], "-", 
+   FractionBox[
+    RowBox[{"401", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "637875"], "-", 
+   FractionBox[
+    RowBox[{"359693", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"10", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"3", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "3831077250"], "+", 
+   FractionBox[
+    RowBox[{"490291", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "14"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "182432250"], "+", 
+   FractionBox[
+    RowBox[{"436", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "-", 
+       RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "212625"], "-", 
+   FractionBox[
+    RowBox[{"26", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "2338875"], "-", 
+   FractionBox[
+    RowBox[{"6131", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"14", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "1"]}], "+", 
+       RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubscriptBox["a", "1"], " ", 
+     SubsuperscriptBox["a", "2", "5"]}], "1915538625"], "+", 
+   FractionBox[
+    RowBox[{"494", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "6"]}], "8505"], "-", 
+   FractionBox[
+    RowBox[{"1738", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "6"]}], "637875"], "+", 
+   FractionBox[
+    RowBox[{"1072", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "8"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "6"]}], "42525"], "-", 
+   FractionBox[
+    RowBox[{"41", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"8", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "6"]}], "467775"], "+", 
+   FractionBox[
+    RowBox[{"21844", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", "\[Theta]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "-", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "6"]}], "6081075"], "-", 
+   FractionBox[
+    RowBox[{"1382", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"12", " ", "\[ImaginaryI]", " ", "\[Theta]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", "\[CurlyPhi]"}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+        SubscriptBox["\[Mu]", "2"]}]}]], " ", 
+     SubsuperscriptBox["a", "2", "6"]}], "638512875"]}]}]}], "Input",
+ CellChangeTimes->{{3.711880946322801*^9, 3.711880969225965*^9}, 
+   3.711881011626772*^9, 3.7118811331526957`*^9, {3.711881356500264*^9, 
+   3.711881362481736*^9}, {3.711881635940291*^9, 3.711881645494246*^9}, {
+   3.711882445728189*^9, 3.711882459354487*^9}, {3.711884340447624*^9, 
+   3.711884391443499*^9}, {3.711884587221243*^9, 3.711884611692153*^9}, {
+   3.7118846418601713`*^9, 3.711884691140431*^9}, {3.711884731186699*^9, 
+   3.711884739702243*^9}, 3.711884786290609*^9, {3.711884862573009*^9, 
+   3.711884896319702*^9}, {3.7118849728330107`*^9, 3.7118849872155447`*^9}, {
+   3.711885017654524*^9, 3.711885057048439*^9}, 3.7118851002714043`*^9, {
+   3.7118853348649693`*^9, 3.711885337942952*^9}, {3.711886336257431*^9, 
+   3.711886356007566*^9}, 3.711886419796937*^9, {3.711886467595579*^9, 
+   3.71188653088577*^9}, {3.7118943697274513`*^9, 3.711894372286224*^9}, 
+   3.711894872462674*^9, 3.7118957660891933`*^9, {3.711895799859095*^9, 
+   3.711895816258204*^9}, {3.7118960259422894`*^9, 3.711896043410293*^9}, {
+   3.711896290389078*^9, 3.711896348526829*^9}, {3.711896379779345*^9, 
+   3.711896402267614*^9}, {3.716904636954357*^9, 3.7169046441827707`*^9}, {
+   3.7185625792088065`*^9, 3.7185626329928827`*^9}, {3.718562772742876*^9, 
+   3.7185627835014915`*^9}, {3.718562834719421*^9, 3.7185628564516635`*^9}, 
+   3.7185629005941887`*^9, {3.718564596781332*^9, 3.718564646649453*^9}, 
+   3.718564706111628*^9, 3.7185647778538055`*^9, 3.7185648212609005`*^9, {
+   3.71856665828805*^9, 3.7185666770391226`*^9}, {3.726044492543112*^9, 
+   3.726044507341836*^9}, {3.7260445454785633`*^9, 3.726044569209087*^9}, {
+   3.726044629153191*^9, 3.726044760207103*^9}, {3.7260452099124813`*^9, 
+   3.726045317777948*^9}, {3.726046741751136*^9, 3.726046901612937*^9}, {
+   3.7260476058671303`*^9, 3.7260477558142242`*^9}, 3.72604790326145*^9, 
+   3.726047976337306*^9, {3.726048179137546*^9, 3.726048310305328*^9}, {
+   3.726048347452209*^9, 3.726048388880845*^9}, {3.72604927038521*^9, 
+   3.726049282117489*^9}, 3.726049349276453*^9, {3.7260528131991043`*^9, 
+   3.726052904280809*^9}},ExpressionUUID->"625d0d5b-ec51-481c-856c-\
+652e26721c9d"]
+},
+WindowSize->{1244, 855},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>0.75 Inherited,
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"Report"}, "StandardReport.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 187299, 4447, 2414, "Input",ExpressionUUID->"625d0d5b-ec51-481c-856c-652e26721c9d"]
+}
+]
+*)
+
