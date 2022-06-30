@@ -1,5 +1,5 @@
 # Wavy Wilson loops
-My code for the publication https://arxiv.org/abs/1811.09638. The input is an holomorphic function $f(z)$ on the disc. Section 2 spells the partial differential equations that define a closed curve on the plane, while Section 2.1 illustrates the perturbative method to deliver a small deformations of the circle. $\epsilon\ll 1$ controls the the bumpiness of a wavy profile and $\varphi\in(0,2\pi)$ spans the wavy profiles.
+My code for the publication https://arxiv.org/abs/1811.09638. The input is an holomorphic function $f(z)$ on the disc. Section 2 spells the partial differential equations that define a closed curve on the plane, while Section 2.1 illustrates the perturbative method to deliver a small deformations of the circle. $ \epsilon\ll 1$ controls the the bumpiness of a wavy profile and $ \varphi\in(0,2\pi) $ spans the wavy profiles.
 
 ## Poster
 For international conference.
