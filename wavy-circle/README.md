@@ -11,7 +11,7 @@ Analysis of generic deformation $f(z)=\epsilon e^{i\varphi} \times (\textrm{quad
 Verify equations (2.7)-(2.24).
 
 ### data.nb
-Solution for curve, in 2 different parametrisations with coefficients $b$'s and $c$'s, in Taylor expansion up to $\epsilon^4$, to be loaded by next notebook.
+Solution for curve, in 2 different parametrisations with coefficients $ b $'s and $ c $'s, in Taylor expansion up to $\epsilon^4$, to be loaded by next notebook.
 
 ### analysis.nb
 Main file.
