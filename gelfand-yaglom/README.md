@@ -25,4 +25,12 @@ Expansion of string action around classical background to get Dirac operators.
 ## Z/
 ### Z.nb
 Asymptotics of Lerch function (4.6), 2d Ricci scalar (2.9) and Euler number (2.12).
-Determinants of Fourier-transformed operators (3.12), (3.14), (3.16), (3.17), (3.37), (3.40)-(3.42) as function of frequency $\omega$, both for finite $\sigma$
+Determinants of Fourier-transformed operators (3.12), (3.14), (3.16), (3.17), (3.37), (3.40)-(3.42) as function of frequency $\omega$, both for finite $\sigma_0$ and in limit $\sigma<sub>0</sub>\to\infty$ as in (3.43)-(3.46). Identities for Lerch functions. Calculate $\log Z$: drop divergent parts as for regularisation scheme in Section 4.
+### Summands.nb
+Calculate $\log Z$: combine finite parts as in Sum.pdf.
+### tmp.mx
+Saved workspace after execution of 2 files above. Created by last line in Z.nb.
+### Z sum.nb
+Calculate $\log Z$: numerical sum of finite remnants over $\omega\in Z$.
+### Z plot.nb
+Plot of $\log Z$ and comparison with expected result in figure 1.
